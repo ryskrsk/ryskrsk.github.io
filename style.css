@@ -1,0 +1,379 @@
+
+.bg-pattern {
+    background-image:url(./Images/image-background5.png);
+    background-position: center;
+}
+
+.logo78 {
+    height: 100%;
+    top: -0,5%;
+    width: 8%;
+}
+
+body{
+    background-color:#ffffff;
+    margin:0px;
+    padding-top: 62px;
+    z-index: 9999;
+}
+ 
+ul{
+    list-style:none;
+}
+ 
+a{
+    text-decoration:none;
+}
+ 
+section{
+    width:100%;
+    height:95vh;
+    position: relative;
+}
+ 
+.logokuis {
+    height: 260px;
+    position: absolute;
+    top: 230px;
+    right: 6%;
+    left: 5%;
+}
+
+.kartu-kuis{
+    margin: 70px 100px 70px 100px;
+    padding: 5% 10% 15% 10%;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2); 
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(./Images/image-background3.png);
+    background-size: cover;
+    font-family:'Calibri';
+    position: inherit;
+}
+
+h1{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #dc2323;
+}
+
+.nameBox{
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    /* height: 42px;
+    width: 130px; */
+}
+
+.question{
+    font-size: 25px;
+    text-align: center;
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.options{
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.options div:hover{
+    background-color: #dc2323;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.submit{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px;
+    background-color: #dc2323;
+    color: #ffffff;
+    border: none;
+}
+
+#resbtn{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px;
+    background-color: #4b4242;
+    color: #ffffff;
+    border: none;
+}
+
+#kuis{
+    background-position: center;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.header-sticky{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
+ 
+}
+
+.header{
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    align-items:center;
+    background-color:#FFFFFF;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2); 
+    border-bottom: #1d1c1c;
+}
+
+.padding-bar{
+    padding-left: 40%;
+}
+
+div ul{
+    display: flex;
+}
+  
+div ul li a{
+    margin:30px;
+    font-family:myriad pro regular;
+    color:#505050;
+    font-size: 15px;
+    font-weight:700;
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+.logo{
+    font-family:sans-serif;
+    color:#dc2323;
+    font-size: 22px;
+    font-weight: bold;
+    animation-name: slideinleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform: translateX(-150px);
+    
+}
+ 
+.active{
+    color:#2d2a2a;
+    font-weight:bold;
+    margin-top: 80%;
+}
+ 
+.text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+ 
+.text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #dc2323;
+    font-size: 60px;
+}
+ 
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+}
+ 
+.text-container p:nth-child(4){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+ 
+.text-container p{
+    line-height: 0px;
+    margin: 55px 0px 25px;
+}
+ 
+.text-container{
+    position: absolute;
+    left: 60%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+ 
+.button-center{
+    margin: 0;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);    
+}
+ 
+.sign-btn{
+    border: 2px solid #373636;
+    color: #373636;
+}
+ 
+button:active{
+    transform: scale(1.1);
+}
+ 
+.model{
+    height: 260px;
+    position: absolute;
+    top: 230px;
+    right: 6%;
+    left: 5%;
+}
+ 
+.services{
+    height:600px;
+    background-color:#f6f5f5;
+    padding: 2% 10% 0px 10%;
+}
+ 
+.services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+ 
+.services-text p:nth-child(2){
+    font-family:calibri;
+    color:#7e7d7d;
+ 
+}
+
+.services-text{
+    margin:50px 0px;
+}
+
+.home{
+    margin-top: 15px;
+}
+
+.testimoni{
+    height:500px;
+    background-color:#FFFFFF;
+    padding: 2% 10% 0px 10%;
+    text-align: center;
+    margin: auto;
+}
+ 
+.testimoni-text p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+}
+ 
+.testimoni-text{
+    margin:70px 0px;
+}
+ 
+.testimoni-col{
+    display:flex;
+    justify-content:space-between;
+}
+ 
+.testimoni-1,.testimoni-2{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f4f2f4;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    width: 500px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);   
+}
+ 
+.testimoni-col img{
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+ 
+.testimoni-col p{
+    padding: 0;
+}
+ 
+.testimoni-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+ 
+.testimoni-col .fas, .testimoni-col .far{
+    color: #f44336;
+}
+ 
+footer p{
+    font-family: calibri;
+}
+
+ 
+footer{
+    height:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(./Images/image-background.jpg);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);   
+}
+  
+.testing{
+    color:#dc2323;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left:50%;
+    bottom:0px;
+    transform: translateX(-50%);
+}

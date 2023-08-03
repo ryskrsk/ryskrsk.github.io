@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hackaton Group 2 - Kuis Kemerdekaan</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+    </head>
+
+    <body>
+        <div class="header-sticky">
+            <div class="header">
+                <img alt="logo78" class="logo78" src="./Images/Logo78.jpg">
+                <a href="#" class="logo">Selamat Datang Anak Bangsa!</a>
+                <div class="padding-bar"></div>
+                <ul class =" space-between">
+                    <li>
+                        <audio id="audio" controls autoplay loop>
+                            <source src="./Images/Indonesia-Raya.mp3" type="audio/mpeg">
+                          </audio>
+                    </li>
+                    <li class="home"><a href="#" class="active">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <section class="bg-pattern">
+                <div class="text-container">
+                    <p>Hai, Pemuda-Pemudi Indonesia</p>
+                    <p>Kuis Kemerdekaan</p>
+                    <p>Ayo, uji ilmu pengetahuan tentang negaramu!</p>
+                    <p>Apakah kamu siap?
+                    </p>
+                    <button onclick="window.location.href='#kuis'">MULAI KUIS</button>
+                </div>
+    
+                <img alt="model" class="model" src="./Images/image2.png">
+            </section>
+        </div>
+        <section id="kuis">
+            <div class="kartu-kuis">
+                <h1>KUIS KEMERDEKAAN HACKATHON</h1>
+
+                <form id="nameForm" class="question nameBox">
+                    <p id="labelNama">Masukan Nama Anda</p>
+                    <input id="nama">
+                   
+                    <button type="button" onclick="submitName()" id="submitNameBtn" class="submit">SUBMIT NAME</button>
+                </form>
+
+                <div class="question" id="soal"></div>
+                <div class="options" id="pilihan"></div>
+
+                <div id="score"></div>
+                <div id="nilai"></div>
+                <!-- <div class="button-center"> -->
+                    <button onclick="checkJawaban()" id="btn" class="submit">SUBMIT</button>
+                    <button onclick="location.reload();" id="resbtn" class="submit">RESET GAME</button>    
+                <!-- </div> -->
+                <audio id="audionilaibagus" src="./Images/crowd-cheer-ii-6263.mp3"></audio>
+                <script src="index.js"></script>
+            </div>
+        </section>
+
+        <footer>
+            <p class="testing">Copyright ©- 2023 HACKATHON - GROUP 2</p>
+        </footer>
+
+    </body>
+
+</html>
